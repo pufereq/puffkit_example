@@ -1,4 +1,4 @@
-# puffkit-example
+# puffkit_example
 
 This is an example project for the [puffkit](https://github.com/pufereq/puffkit) library.
 
