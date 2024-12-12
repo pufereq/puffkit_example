@@ -29,7 +29,7 @@ addopts = [
 
 [tool.coverage.run]
 omit = [
-    "puffkit-example/__init__.py",
+    "puffkit_example/__init__.py",
     "tests/*",
     "puffkit/*",
 ]
