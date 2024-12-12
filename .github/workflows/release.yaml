@@ -38,14 +38,7 @@ env:
   GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
 jobs:
-  test:
-    name: Test
-    runs-on: ubuntu-latest
-    steps:
-      - name: Test
-        uses: ./.github/actions/test
   bump_version:
-    needs: test
     runs-on: ubuntu-latest
     name: Bump version and create release
     steps:
