@@ -8,6 +8,8 @@ from puffkit_example import __version__
 
 from puffkit import PkApp
 
+from puffkit_example.scenes import WidgetTestScene
+
 
 class ExampleApp(PkApp):
     def __init__(self):
@@ -26,4 +28,7 @@ class ExampleApp(PkApp):
             fps_limit=60,
         )
 
-        self.event_manager.add_handler("Quit", lambda _: self.quit())
+        self.event_manager.add_handler("QUIT", lambda _: self.quit())
+
+        self.scene_manager.add_scene(WidgetTestScene(self))
+        self.scene_manager.set_scene("WidgetTestScene")
