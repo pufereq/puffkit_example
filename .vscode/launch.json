@@ -10,6 +10,7 @@
             "request": "launch",
             "program": "${workspaceFolder}/puffkit_example/__main__.py",
             "console": "internalConsole",
+            "preLaunchTask": "pdm: Install Depedencies"
         }
     ]
 }
