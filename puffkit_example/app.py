@@ -28,7 +28,7 @@ class ExampleApp(PkApp):
             fps_limit=60,
         )
 
-        self.event_manager.add_handler("QUIT", lambda _: self.quit())
+        self.event_manager.add_handler("QUIT", lambda _: self.quit())  # type: ignore
 
         self.scene_manager.add_scene(WidgetTestScene(self))
         self.scene_manager.set_scene("WidgetTestScene")
