@@ -486,7 +486,7 @@ files = [
 
 [[package]]
 name = "puffkit"
-version = "0.9.0"
+version = "0.10.1.post3"
 requires_python = ">=3.9"
 path = "./puffkit"
 summary = "A pygame-ce based engine for application and game development."

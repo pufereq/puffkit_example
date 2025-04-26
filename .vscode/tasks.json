@@ -7,7 +7,7 @@
             "type": "shell",
             "args": [],
             "problemMatcher": [
-                "$tsc"
+                "$python"
             ],
             "presentation": {
                 "reveal": "silent"

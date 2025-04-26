@@ -4,7 +4,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 from puffkit import PkScene, PkContainer
-from puffkit.widget import PkWidget, PkLabelWidget, PkButtonWidget
+from puffkit.widget import PkWidget, PkLabelWidget, PkButtonWidget, PkTextInputWidget
 
 
 if TYPE_CHECKING:
@@ -104,23 +104,42 @@ class WidgetTestScene(PkScene):
             ),
         )
 
+        # textbox widget
+        container.add_widget(
+            PkTextInputWidget(
+                "test_textbox",
+                container,
+                (16, 112, 368, 32),
+                "Test Textbox",
+                padding=4,
+                background_color="#000000",
+                background_color_disabled="#888888",
+                background_color_focused="#404040",
+                text_color="#FFFFFF",
+                placeholder="Type here...",
+            ),
+        )
+
         self.containers.append(container)
 
     def on_update(self, delta: float) -> None:
         """Update the scene."""
         button_states: list[str] = []
         button = self.containers[0].widgets["test_button"]
-        if button._disabled:
+        if button.disabled:
             button_states.append("Disabled")
-        if button._hovered:
+        if button.hovered:
             button_states.append("Hovered")
-        if button._pressed:
+        if button.pressed:
             button_states.append("Pressed")
         if not button_states:
             button_states.append("Normal")
-        self.containers[0].widgets["button_state_label"].set_text(
+        self.containers[0].get_widget("button_state_label").set_text(
             f"Button state: {', '.join(button_states)}"
         )
+
+        self.scene_label_container.input(**self._input)
+        self.scene_label_container.update(delta)
 
         for container in self.containers:
             container.input(
