@@ -4,7 +4,7 @@ build-backend = "pdm.backend"
 
 [project]
 name = "puffkit_example"
-version = "0.1.0"
+version = "0.3.0"
 description = "An example PuffKit app, for debugging and showcase purposes."
 authors = [
     {name = "Artur Borecki", email = "me@pufereq.pl"},
