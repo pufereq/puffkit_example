@@ -126,15 +126,15 @@ class WidgetTestScene(PkScene):
         """Update the scene."""
         button_states: list[str] = []
         button = self.containers[0].widgets["test_button"]
-        if button._disabled:
+        if button.disabled:
             button_states.append("Disabled")
-        if button._hovered:
+        if button.hovered:
             button_states.append("Hovered")
-        if button._pressed:
+        if button.pressed:
             button_states.append("Pressed")
         if not button_states:
             button_states.append("Normal")
-        self.containers[0].widgets["button_state_label"].set_text(
+        self.containers[0].get_widget("button_state_label").set_text(
             f"Button state: {', '.join(button_states)}"
         )
 
