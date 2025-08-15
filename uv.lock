@@ -364,7 +364,7 @@ wheels = [
 [[package]]
 name = "puffkit"
 version = "0.11.1"
-source = { directory = "../puffkit" }
+source = { editable = "../puffkit" }
 dependencies = [
     { name = "pygame-ce" },
     { name = "pyyaml" },
@@ -398,7 +398,7 @@ test = [
 
 [[package]]
 name = "puffkit-example"
-version = "0.3.0"
+version = "0.3.1"
 source = { editable = "." }
 dependencies = [
     { name = "puffkit" },
@@ -421,7 +421,7 @@ test = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "puffkit", directory = "../puffkit" }]
+requires-dist = [{ name = "puffkit", editable = "../puffkit" }]
 
 [package.metadata.requires-dev]
 bump = [
