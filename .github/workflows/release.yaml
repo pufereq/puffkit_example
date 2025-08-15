@@ -46,7 +46,7 @@ jobs:
           token: "${{ secrets.GITHUB_TOKEN }}"
           submodules: "recursive"
 
-      - name: clone pufkfit
+      - name: clone puffkit
         run: git clone https://github.com/pufereq/puffkit ../puffkit
 
       - name: 📦 install uv
