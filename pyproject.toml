@@ -7,7 +7,9 @@ name = "puffkit_example"
 version = "0.3.1"
 description = "An example puffkit app, for debugging and showcase purposes."
 authors = [{ name = "Artur Borecki", email = "me@pufereq.pl" }]
-dependencies = ["puffkit @ file:///${PROJECT_ROOT}/../puffkit"]
+dependencies = [
+    "puffkit",
+]
 requires-python = ">=3.13"
 readme = "README.md"
 license = { text = "GPL-3.0+" }
@@ -54,6 +56,9 @@ allowed_tags = [
 minor_tags = ["feat"]
 patch_tags = ["fix", "perf"]
 default_bump_level = 0
+
+[tool.uv.sources]
+puffkit = { path = "../puffkit", editable = true }
 
 [dependency-groups]
 test = [
