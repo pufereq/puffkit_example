@@ -4,7 +4,7 @@ build-backend = "uv_build"
 
 [project]
 name = "puffkit_example"
-version = "0.3.0"
+version = "0.3.1"
 description = "An example puffkit app, for debugging and showcase purposes."
 authors = [{ name = "Artur Borecki", email = "me@pufereq.pl" }]
 dependencies = ["puffkit @ file:///${PROJECT_ROOT}/../puffkit"]

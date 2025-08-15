@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.3.1] - 2025-08-15
+
+### Miscellaneous Tasks
+
+- [`d99a10c`](https://github.com/pufereq/template-repo/commit/d99a10c12b1237bc774239cd8068dff33a62b979) **release.yaml**: clone puffkit in ci
+- [`eade86a`](https://github.com/pufereq/template-repo/commit/eade86ae51b18a0be0bb2d642ccdd2a491fd911d) **release.yaml**: update release workflow to use uv
+- [`3af0cf2`](https://github.com/pufereq/template-repo/commit/3af0cf2e38c54b6d473a5fa8d50d58419d7fda13) **pr_checks.yaml**: remove unnecesarry workflow
+- [`cffa5ce`](https://github.com/pufereq/template-repo/commit/cffa5ce6787ae7eab9c0bc13d9e0c7950c28f2fe) **commit_checks.yaml**: remove unnecesarry workflow
+- [`b4b2b91`](https://github.com/pufereq/template-repo/commit/b4b2b9103e055bc3cafb702016e421cd7a9061e3) **tasks.json**: remove tasks.json
+- [`177779f`](https://github.com/pufereq/template-repo/commit/177779fcecae90c469b708f6f3887a03612f8062) **launch.json**: fix launch.json
+
+### Refactor
+
+- [`a7fc103`](https://github.com/pufereq/template-repo/commit/a7fc103014b1eb23ff92d6b79ecff4a285eb5ca7) **widget_test_scene.py**: move `puffkit_example/scenes/widget_test_scene.py` to `src/puffkit_example/scenes/widget_test_scene.py`
+- [`3480d1e`](https://github.com/pufereq/template-repo/commit/3480d1ebb71c92a50231cdced4967bd74a85045e) **scenes/__init__.py**: move `puffkit_example/scenes/__init__.py` to `src/puffkit_example/scenes/__init__.py`
+- [`10db5ac`](https://github.com/pufereq/template-repo/commit/10db5acc2f3cdf804775250fc47c56ccc3bcbc4d) **__main__.py**: move `puffkit_example/__main__.py` to `src/puffkit_example/__main__.py`
+- [`a96db57`](https://github.com/pufereq/template-repo/commit/a96db57b6db205a3ed73bc388c5512367578a5b4) **__init__.py**: move `puffkit_example/__init__.py` to `src/puffkit_example/__init__.py`
+- [`31db07e`](https://github.com/pufereq/template-repo/commit/31db07ee4baeed19b5ebee2cff25a7b4cfc3815a) **app.py**: move `puffkit_example/app.py` to `src/puffkit_example/app.py`
+
+### Build
+
+- [`4c98fd9`](https://github.com/pufereq/template-repo/commit/4c98fd94e468382ae2602be59e12ade1f08a3df4) **uv.lock**: add uv lockfile
+- [`5b0534d`](https://github.com/pufereq/template-repo/commit/5b0534d3f121b40c3809c559f24168dfea4ee7a6) **puffkit**: remove puffkit submodule as now references ../puffkit
+- [`411a686`](https://github.com/pufereq/template-repo/commit/411a686086508a66e7817ab6a6586b992df258f7) **pdm.lock**: remove pdm lockfile
+- [`4ffad9e`](https://github.com/pufereq/template-repo/commit/4ffad9e46e1337ff1823227cb5f8774da535f094) **pyproject.toml**: migrate to uv
+
 ## [0.3.0] - 2025-04-26
 
 ### Bug Fixes
