@@ -5,7 +5,7 @@
       "name": "Python Debugger: __main__.py",
       "type": "debugpy",
       "request": "launch",
-      "program": "${workspaceFolder}/src/puffkit_example/__main__.py",
+      "module": "puffkit_example",
       "console": "internalConsole"
     }
   ]

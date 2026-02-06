@@ -24,8 +24,8 @@ class ExampleApp(PkApp):
             app_version=__version__,
             display_size=(800, 600),
             display_arguments={},
-            internal_screen_size=(400, 300),
-            fps_limit=60,
+            internal_screen_size=(800, 600),
+            fps_limit=30,
         )
 
         self.event_manager.add_handler("QUIT", lambda _: self.quit())  # type: ignore
